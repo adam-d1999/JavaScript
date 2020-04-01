@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Blog Three | Adam Downing</title>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name= "description" content= "Portfolio page for Adam Downing, showcasing CV, Portfolio and Blogs.">
+    <meta name="keywords" content="MMU, Manchester, CSS, HTML, Portfolio, Blog">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto%7cZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+<header>
+<!-- navbar-->
+    <nav class="page-nav">
+        <ul class="main-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#portfolio">Portofolio</a></li>
+        <li><a href="../blog_page.html">Blogs</a></li>
+        <li><a href="../cv.html">CV</a></li>
+        </ul>
+    </nav>
+    </header>
+<!-- content -->
+<main>
+    <section class="blog-container">
+         <div class="blog-title">
+            <h1>Learning JavaScript</h1>
+            <p>Adam Downing - 19/02/20</p>
+        </div>
+
+        <div class="blog-intro-container">
+            <div class="blog-intro">
+                <h2>Project Aim</h2>
+                <p>Widen my knowledge surrounding JavaScript by creating a light or dark mode for my current site and implement this through a link on my current website.</p>
+                <h2>Objectives</h2>
+                <ul>
+                    <li>Research why JavaScript is a useful language</li>
+                    <li>Learn how to create a light or dark mode button</li>
+                    <li>Implement the code through the use of a link</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog-content">
+            <h2>Definition</h2>
+            <p>JavaScript is a programming language that is predominantly used on the web, in fact according to the Manchester Digital Skills Audit (2019) it is the second most in-demand language. It allows for the implementation of complex programs, when a website does more than just display static information. A number of good examples of the use of JavaScript is interactive maps such as Google Maps, validation of data and the ability to react to events (MDN, no date).</p>
+            <p>The reason for selecting this as one of my self-initiated projects is because it is one of main languages required in order to create high quality websites, alongside the use of HTML and CSS. These are two languages that I already feel comfortable with so widening my knowledge on JavaScript is going to benefit me greatly in creating professional websites.</p>
+            <p>In my second year of university I gained a small amount of experience using JavaScript, but due to the length of time since I last experimented with this language I had forgotten much of what I had already learned. This is where I first found my interest of JavaScript, although I was only able to do this throughout one year of my university experience as it was not an option for my final year units.  My first plan of action was to refresh myself on some of the basic elements of JavaScript through the use of a book, published by my previous lecturer ‘Chris Dawson’. The book explores many of the basics needed to start the journey into JavaScript and I found that my memory was hastily refreshed. Alongside the use of the book I also looked into guides from w3schools which further assisted me. </p>
+            <h2>Set Up</h2>
+            <p>The decision to use CodePen for the prototype was made with ease, using this software allowed me to see instant results from the code that I was editing and also allowed me to group to view the HTML, CSS and JavaScript all on one window. For the final project I have used HTML, CSS and JavaScript programming languages to enable me to create a working product, the coding software used was Microsoft Visual Studio Code as I am most used to this software.</p>
+            <h2>Location</h2>
+            <p>A live version of the website with the Dark Mode feature can be found <a href="http://www.17068764.webdevmmu.uk/JavaScript%20Dark%20Mode/portfolio-site/index.html">here.</a></p>
+            <h2>How</h2>
+            <p>Before I started entering the code onto my own website I created a much simpler prototype in CodePen that can be seen below. This allowed me to gain a general understanding of the process before I began to implement this into my own website.  Please feel free to interact with the CodePen to see how it works.</p>
+            <!-- CodePen-->
+            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="adam-downing" data-slug-hash="NWqLPLa" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Prototype Dark Mode">
+                <span>See the Pen <a href="https://codepen.io/adam-downing/pen/NWqLPLa">
+                Prototype Dark Mode</a> by Adam Downing (<a href="https://codepen.io/adam-downing">@adam-downing</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+              <p>After creating a prototype, I needed to calculate the best way in which to carry out adding a dark or light mode to my website, I came to the realisation that the most efficient way to do this was through the addition of a button. The button would enable the user to be able to be able to choose whether they preferred the site in light or dark mode. </p>
+
+              <img src="../images/javaScript.png" alt="JavaScript code in an editor">
+
+              <p>The first step I carried out was adding the button in a suitable location through the use of HTML, this was towards the top of the page so it could be easily located. I gave the button a suitable label called ‘toggle dark mode’ so the user knows what the button will do.</p>
+              <p>I then proceeded to create a class within the CSS file that specifies the desired background colour and text colour, as you can see I have named this ‘dark-mode’. To create a dark theme, the chosen background colour is black and text colour is white, this will hopefully help reduce screen glare when users are reading through my site.</p>
+              <p>This is where the confusing part enters – JavaScript. For JavaScript to work within HTML it has to be entered between ‘script’ tags. Then I needed to create a function defined with the ‘function’ keyword, then a given unique name, I named it ‘myFunction’, which is then followed by parentheses where parameters can be entered, although for this type of programming there is no requirement for them. The code that is going to be executed is entered between curly brackets, similar to CSS. Often with JavaScript you need to manipulate HTML elements, in this case we are finding HTML elements through the use of HTML object collections such as ‘document.body’ and assigning it to a variable called ‘element’. A variable in JavaScript is a container for storing information. In the next line of code we are selecting the variable and ‘classList’ property which returns the class name of an element, which allows us to toggle the dark mode class, to finalise the function is closed using a curly bracket and the script tag is then closed.To finalise we return to the button where we state ‘onClick’ so when a user clicks the button the function is ran.</p>
+              <h2>Evaluation</h2>
+              <p>Overall, I am pleased with the final product although, there could have been some things that were better refined, such as some of the headers on the CV page disappeared when in dark mode, furthermore this also happened with the references on the blog pages. I tried to counter this by overriding some of the code, but I couldn’t seem to get it to work. I am pleased to have widened my knowledge on JavaScript and would feel happy to use this in the future. If I was to carry out the project again, I’d like to iron out some of the errors and possibly delve deeper into JavaScript to see what else it is capable of.</p>
+        </div>
+        <h3>References:</h3>
+        <div class="references">
+        <ul>
+            <li>Chris Dawson. Learning to program using JavaScript, Manchester Metropolitan University.[Accessed on 15 January 2020].</li>
+
+            <li>Manchester Digital Skills Audit Report. 2019. Manchester Digital Skills Audit Report. [ONLINE] Available at: <a href="https://www.manchesterdigital.com/talent-and-skills/digital-skills-audit">https://www.manchesterdigital.com/talent-and-skills/digital-skills-audit</a> [Accessed 15 January 2020].</li>
+
+            <li>MDN. 2020. What Is JavaScript? [ONLINE] Available at: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript</a>. [Accessed 16 January 2020].</li>
+
+            <li>W3schools. 2020. JavaScript Tutorial. <a href="https://www.w3schools.com/js/">https://www.w3schools.com/js/</a>. [Accessed 17 January 2020].</li>
+        </ul>
+        </div>
+        <div class="blog-buttons">
+            <div class="previous-button">
+                <button onClick="window.location.href = 'blog4.html';">Previous Blog</button>
+            </div>
+            <div class="next-button">
+                <button onClick="window.location.href = 'blog6.html';">Next Blog</button>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- footer -->
+<footer class="page-footer">
+    <div class="footer-content">
+        <p>
+            <span class="footer-text">&copy;</span>
+            <span class="footer-text"> 2019 Copyright Adam Downing</span>
+            <span class="footer-separator">&middot;</span>
+            <span class="footer-text"><a href="https://www.linkedin.com/in/adam-downing-41a3a1194/">LinkedIn Profile</a></span>
+            <span class="footer-separator">&middot;</span>
+            <span class="footer-text">Website Developer</span>
+            <span class="footer-text"> &copy; <a href="http://www.mmu.ac.uk/" title="MMU homepage">MMU 2019</a> | This is Student Coursework | Tutor <a href="mailto:r.eskins@mmu.ac.uk">Richard Eskins</a> | <a href="//validator.w3.org/check?uri=referer" title="W3C HTML Validation Service">Valid HTML</a></span>
+        </p>
+    </div>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.page-footer {
+    background-color: $primary-color;  
+    color: $fifth-color;
+    padding: 10px;
+    font-size: small;
+    text-align: center;
+    a {
+        color: $fifth-color;
+    }
+    p {
+        color: $fifth-color;
+        padding: 1px;
+        padding-top: 10px;
+        font-size: small;
+    }
+}
+ 
+@media screen and (min-width: 700px) {
+    .page-footer p {
+        font-size: medium;
+    }
+}

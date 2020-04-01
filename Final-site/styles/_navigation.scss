@@ -1,0 +1,21 @@
+.page-nav {
+    background-color:$primary-color;
+}
+
+.main-nav {
+    list-style-type: none;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: $fifth-color;
+    }
+    a:hover {
+        border: solid $fifth-color 2px;
+        transition: border 0.2s ease-in-out;
+    }
+    
+}

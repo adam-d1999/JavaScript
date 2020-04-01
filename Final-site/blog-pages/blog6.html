@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Blog Three | Adam Downing</title>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name= "description" content= "Portfolio page for Adam Downing, showcasing CV, Portfolio and Blogs.">
+    <meta name="keywords" content="MMU, Manchester, CSS, HTML, Portfolio, Blog">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto%7cZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+<header>
+<!-- navbar-->
+    <nav class="page-nav">
+        <ul class="main-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#portfolio">Portofolio</a></li>
+        <li><a href="../blog_page.html">Blogs</a></li>
+        <li><a href="../cv.html">CV</a></li>
+        </ul>
+    </nav>
+    </header>
+<!-- content -->
+<main>
+    <section class="blog-container">
+         <div class="blog-title">
+            <h1>Learning SASS</h1>
+            <p>Adam Downing - 10/03/20</p>
+        </div>
+
+        <div class="blog-intro-container">
+            <div class="blog-intro">
+                <h2>Project Aim</h2>
+                <p>To learn SASS and implement this into my website in order to make maintaining my site easier and refine my code.</p>
+                <h2>Objectives</h2>
+                <ul>
+                    <li>Research why SASS should be used</li>
+                    <li>Learn how to use SASS</li>
+                    <li>Demonstrate how i have implemented SASS into my site</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog-content">
+
+            <h2>Defintion</h2>
+
+            <p>CSS is pretty fun within itself but stylesheets in the modern day are getting larger, harder to maintain and incredibly complex (SASS, 2020). This is where Syntactically Awesome Style Sheets also known as SASS becomes extremely useful.  It uses your pre-processed SASS file and automatically converts it into a normal CSS file which can be used within your website. The main question that needs to be answered is why you should choose SASS over regular CSS? This is down to the numerous features that is possesses, although for this project I am going to drawing my attention to nesting, imports and variables. I have chosen to only focus on these features as I felt these would benefit my site greatly. </p>
+
+            <p>Before carrying out this self-initiated project I have had no previous experience with SASS, or pre-processors in general. After carrying out some research it came to my attention that SASS was arguably the most well-known pre-processor (Uzayr, 2015). With this newly acquired knowledge I had no doubt that I wanted to gain a greater understanding of SASS.</p>
+            
+            <h2>Background Information</h2>
+
+            <p>Before I jump into the setup it is probably best to explain what each of these features contribute to my site. The first feature is nesting, extremely similar to what is found in HTML which will greatly improve the readability of my file. Furthermore, if I wished to return to the file to edit something it would be much easier to pinpoint the exact piece of code I was looking for.</p>
+
+            <p>Next up are variables, similar to variables in JavaScript they also store information that you can then re-use. In this project I will be using it for elements such as colours, padding and generally any value within CSS that I will reference within my SASS file.</p>
+
+            <p>The final feature I will be exploring within this project are imports, fundamentally it allows you to dissect your SASS code into much smaller sections which will further contribute towards being able to upkeep my website with ease.</p>
+
+            <h2>Setup</h2>
+
+            <p>To be able to use SASS it is essential that you compile it into a CSS file through the use of the SASS command. In simpler terms this means telling the software which file you desire to build from and the output location of the CSS. Although in my case, I installed a SASS compiler plug that was developed for Visual Studio Code, which was ideal as this is the editor, I am most familiar with. By using this it automatically assigned an output location for me. Visual Studio Code also had a live server extension which was extremely useful and allowed me to see real time changes in my coding. My site did not need drastic changes, so I decided to do edit my current code rather than beginning from scratch.</p>
+
+            <h2>Process</h2>
+
+            <p>I began by creating a new folder so that I could duplicate my previous web pages, images and other vital files. By creating a duplicate folder, I did not have to worry about losing any original pieces of code and could revert back to these if anything went wrong. I began by copy and pasting all of my HTML files and then creating a SASS file named ‘styles.scss’ within a folder named ‘styles’. I then entered into the ‘styles.scss’ file all of the CSS from my previous site and once saved a CSS file is automatically created. Another useful aspect of SASS is that it adds vendor prefixes for different browsers that don’t necessarily support CSS Flexbox and Grid.</p>
+            <div class="blog6-images">
+                <img src="../images/variables.jpg" alt="SASS variables in an editor">
+            </div>
+            <p>I then created a separate SASS file named ‘variables.scss’ to withhold the variables I wanted to use, these are created through using the ‘$’ symbol followed by what you wish to name the variable and similar to CSS you it is pursued by a colon. Then a desired value was assigned, and the line of code is closed with a semi-colon.</p>
+
+            <p>The next step was to edit the second-hand CSS code from my previous site, I changed the code within my CSS that could be replaced with the variables I had created. Whilst doing this I thought it would be a good idea to nest the code within the CSS where necessary, to improve readability.</p>
+
+            <p>Progressing from this I also decided it would be beneficial to create two further SASS files for the footer and navigation of my site. The reasoning for this, was that these two elements are used throughout every page on my website. For the secondary files I used an underscore whilst naming them to reduce confusion for myself within the editor.</p>
+            <div class="blog6-flex">
+                <div class="blog6-images">
+                <img src="../images/imports.png" alt="SASS imports in an editor">
+                </div>
+            </div>
+            <p>To incorporate these into the original ‘styles.scss’ file I needed to use another feature that SASS offers, importation. To do this the ‘@’ symbol is used followed by the word ‘import’ and the file location within quotation marks, then closed with a semi-colon.</p>
+            <div class="blog6-images">
+                <img src="../images/colour-change.png" alt="Change of variable in editor">
+            </div>
+            <p>Now that I had setup SASS it was time to ensure I had done it successfully; I already knew that I had setup the navigation and footer correctly as they wouldn’t appear if I had made an error. I decided that I was going to change the ‘$secondary-color’ from navy to red, once saved this should apply the changes to my website.</p>
+            
+            
+
+            
+        <div class="before-after-container">
+            
+            <div class="before">
+                <h2>Website before:</h2>
+                <img src="../images/before.png" alt="Website before change">
+            </div>
+            <div class="before">
+                <h2>Website after:</h2>
+                <img src="../images/after.png" alt="Website after change">
+            </div>
+            <p>As you can see from the images this worked correctly, with the introduction of SASS I will now be able to apply any changes to my website with ease.</p>
+        </div>
+
+            <h2>Location</h2>
+            <p>To view the full code either look at the source by pressing the Control key + U or feel free to head over to my GitHub.</p>
+
+            <h2>Evaluation</h2>
+
+            <p>Overall, I found that SASS had a small learning curve and was easy to come to terms with. I feel that this is due to my knowledge of CSS that I have gained throughout the course of University. The similarity it also shares with JavaScript also accelerated how quickly I was able to grasp this language. If I was to tackle this project again, I think I would re-design my website from scratch instead of using second-hand code from my previous site, due to the speed in which SASS allows you to work. With the introduction of SASS into my portfolio site I feel relief that I will now be able to edit my site much easier and now I have a general understanding of a much useful language.</p>
+        </div>
+        <h3>References:</h3>
+        <div class="references">
+        <ul>
+            <li>SASS, 2020, Syntactically Awesome Style Sheets, [ONLINE] Available at:  <a href="https://sass-lang.com/guide">https://sass-lang.com/guide</a> [Accessed on 15 February 2020].</li>
+
+            <li>Uzayr, S, 2015, 10 CSS Preprocessors Worth Considering, [ONLINE] Available at: <a href="https://envato.com/blog/css-preprocessors/">https://envato.com/blog/css-preprocessors/</a> [Accessed on 20 February 2020].</li>
+        </ul>
+        </div>
+
+        <div class="blog-buttons">
+            <div class="previous-button">
+                <button onClick="window.location.href = 'blog5.html';">Previous Blog</button>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- footer -->
+<footer class="page-footer">
+    <div class="footer-content">
+        <p>
+            <span class="footer-text">&copy;</span>
+            <span class="footer-text"> 2019 Copyright Adam Downing</span>
+            <span class="footer-separator">&middot;</span>
+            <span class="footer-text"><a href="https://www.linkedin.com/in/adam-downing-41a3a1194/">LinkedIn Profile</a></span>
+            <span class="footer-separator">&middot;</span>
+            <span class="footer-text">Website Developer</span>
+            <span class="footer-text"> &copy; <a href="http://www.mmu.ac.uk/" title="MMU homepage">MMU 2019</a> | This is Student Coursework | Tutor <a href="mailto:r.eskins@mmu.ac.uk">Richard Eskins</a> | <a href="//validator.w3.org/check?uri=referer" title="W3C HTML Validation Service">Valid HTML</a></span>
+        </p>
+    </div>
+
+</footer>
+</body>
+</html>
